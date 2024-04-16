@@ -13,6 +13,7 @@
 		D00004B12BCEC8BA003B55F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00004B02BCEC8BA003B55F8 /* Preview Assets.xcassets */; };
 		D00004B82BCED5F2003B55F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00004B72BCED5F2003B55F8 /* CardView.swift */; };
 		D00004BB2BCED84A003B55F8 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00004BA2BCED84A003B55F8 /* CustomBackgroundView.swift */; };
+		D00004BE2BCED9FD003B55F8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00004BD2BCED9FD003B55F8 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D00004B02BCEC8BA003B55F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D00004B72BCED5F2003B55F8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D00004BA2BCED84A003B55F8 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		D00004BD2BCED9FD003B55F8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		D00004A82BCEC8B9003B55F8 /* Hike */ = {
 			isa = PBXGroup;
 			children = (
+				D00004BC2BCED9E4003B55F8 /* Utility */,
 				D00004A92BCEC8B9003B55F8 /* HikeApp.swift */,
 				D00004AB2BCEC8B9003B55F8 /* ContentView.swift */,
 				D00004B92BCED838003B55F8 /* Component */,
@@ -79,6 +82,14 @@
 				D00004BA2BCED84A003B55F8 /* CustomBackgroundView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		D00004BC2BCED9E4003B55F8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D00004BD2BCED9FD003B55F8 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 				D00004B82BCED5F2003B55F8 /* CardView.swift in Sources */,
 				D00004AA2BCEC8B9003B55F8 /* HikeApp.swift in Sources */,
 				D00004BB2BCED84A003B55F8 /* CustomBackgroundView.swift in Sources */,
+				D00004BE2BCED9FD003B55F8 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
