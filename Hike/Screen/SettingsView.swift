@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - Properties
+    private let alternateAppIcons: [String] = [
+        "AppIcon-Backpack",
+        "AppIcon-Camera",
+        "AppIcon-Campfire",
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom"
+    ]
+    
     var body: some View {
         List() {
             // MARK: - Section Header
@@ -49,7 +59,36 @@ struct SettingsView: View {
                 .padding(.bottom, 16)
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             }.listRowSeparator(.hidden)
+            
+            
             // MARK: - Section Icons
+            Section(header: Text("App Icons")) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack (spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button {
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item])
+                            } label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    }
+                }
+                .padding(.top, 12)
+                Text("Choose yout favorite app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                    .padding(.bottom, 12)
+            }
+            .listRowSeparator(.hidden)
+            
             
             // MARK: - Section About
             Section (
