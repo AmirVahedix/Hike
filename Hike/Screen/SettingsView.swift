@@ -52,6 +52,59 @@ struct SettingsView: View {
             // MARK: - Section Icons
             
             // MARK: - Section About
+            Section (
+                header: Text("ABOUT THE APP"),
+                footer: HStack {
+                    Spacer()
+                    Text("Copyright © all rights reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ) {
+                CustomListRowView(
+                    label: "Application",
+                    icon: "apps.iphone",
+                    color: .blue,
+                    description: "Hike"
+                )
+                CustomListRowView(
+                    label: "Compatibility",
+                    icon: "info.circle",
+                    color: .red,
+                    description: "iOS, iPadOS"
+                )
+                CustomListRowView(
+                    label: "Technology",
+                    icon: "swift",
+                    color: .orange,
+                    description: "Swift"
+                )
+                CustomListRowView(
+                    label: "Version",
+                    icon: "gear",
+                    color: .purple,
+                    description: "1.0"
+                )
+                CustomListRowView(
+                    label: "Developer",
+                    icon: "ellipsis.curlybraces",
+                    color: .mint,
+                    description: "Amir Vahedi"
+                )
+                CustomListRowView(
+                    label: "Designer",
+                    icon: "paintpalette",
+                    color: .pink,
+                    description: "Javad"
+                )
+                CustomListRowView(
+                    label: "Website",
+                    icon: "globe",
+                    color: .indigo,
+                    linkLabel: "AmirVahedix",
+                    linkDestination: "https://AmirVahedix.com"
+                )
+            }
         }
     }
 }
